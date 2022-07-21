@@ -28,7 +28,8 @@ width: 85%;
 
 export const HomepageHeaderCtaWrapper = styled.div`
   display: flex;
-
+  margin-top: 48px;
+  justify-content: space-evenly;
 `
 export const HomepageHeaderCtaJoin = styled.div``
 

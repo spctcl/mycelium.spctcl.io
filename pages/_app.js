@@ -4,9 +4,9 @@ import React from 'react';
 import Footer from '../components/footer/Footer';
 import Nav from '../components/nav/Nav';
 // import '../styles/globals.css';
+import fontStyles from '../styles/fonts.css';
 import lightTheme from '../styles/theme/lightTheme';
 import createEmotionCache from '../utils/createEmotionCache';
-
 const clientSideEmotionCache = createEmotionCache();
 
 // var client = contentful.createClient({
