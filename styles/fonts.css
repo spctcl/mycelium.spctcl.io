@@ -19,7 +19,6 @@
   font-weight: 300;
   font-display: swap;
   src: url("/fonts/Inter/Inter-Light.ttf") format("truetype"),
-
 }
 
 @font-face {
@@ -51,7 +50,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/Inter/Inter-Bold.ttf") format("truetype"),
+  src: url("../fonts/Inter/Inter-Bold.ttf") format("truetype"),
 }
 
 @font-face {

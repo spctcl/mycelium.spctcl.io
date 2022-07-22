@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import Fonts from '../fonts';
 import { bodyStyled } from '../globals';
 import { normalizeCss } from "../normalize";
 
@@ -49,7 +48,7 @@ const lightTheme = createTheme({
   },
   components: {
     MuiCssBaseline: {
-      styleOverrides: `${normalizeCss} ${bodyStyled} ${Fonts}
+      styleOverrides: `${normalizeCss} ${bodyStyled}
       body {
         // background: rgb(5,3,72);
         // background: linear-gradient(90deg, rgb(5 3 72) 0%, rgb(112 9 121 / 23%) 64%, rgb(152 244 246) 100%);
