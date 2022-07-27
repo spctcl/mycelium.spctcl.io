@@ -1,6 +1,25 @@
-import Link from 'next/link'
+import { Typography } from '@mui/material';
+import Button from '@mui/material/Button';
+import Head from 'next/head';
+import HighlightedGradient from '../components/atoms/highlighted-gradient/HighlightedGradient';
+import IllustrationMushroom1 from '../components/illustrations/illustration-mushroom-1';
+import IllustrationMushroom2 from '../components/illustrations/illustration-mushroom-2';
+import {
+  Homepage,
+  HomepageHeader, HomepageHeaderCtaDiscord, HomepageHeaderCtaJoin, HomepageHeaderCtaWrapper,
+  HomepageHeaderInfo,
+  HomepageHeaderSubtitle,
+  HomepageIllustrationWrapper
+} from '../styles';
 
-export default function Home() {
+// connect to contentful
+// var client = contentful.createClient({
+//   space: process.env.CONTENTFUL_SPACE_ID,
+//   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+// });
+
+export default function Home(props) {
+  console.log("props", props)
   return (
     <>
       <Head>
@@ -61,3 +80,5 @@ export async function getStaticProps() {
     },
   }
 }
+
+
