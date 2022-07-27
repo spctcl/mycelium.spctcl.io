@@ -1,6 +1,6 @@
 import { normalize } from "polished";
 
-export const resetStyled = `
+export const normalizeCss = `
   ${normalize()};
   * {
     box-sizing: border-box;

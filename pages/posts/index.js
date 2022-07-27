@@ -7,8 +7,21 @@ var client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
-function Posts({ post, posts, category }) {
-  console.log("posts:", post, posts, category)
+// function Posts({ post, posts, category }) {
+//   console.log("posts:", post, posts, category)
+//   return (
+//     <>
+//       <Head>
+//         <title>Zeilen aus der Mühle</title>
+//         <meta name="description" content={'Ein Blog über das Leben im Wendland'} key="description" />
+//       </Head>
+//       Posts
+//     </>
+//   )
+// }
+
+function Posts({}) {
+  // console.log("posts:", post, posts, category)
   return (
     <>
       <Head>
@@ -20,20 +33,17 @@ function Posts({ post, posts, category }) {
   )
 }
 
-export async function getServerSideProps(props) {
-  const { slug } = context.params
+// export async function getServerSideProps(props) {
+  // const { slug } = context.params
 
-  const post = await client.getEntry('3PZ8ZrN0Yawx9r1lOcMPnR')
-  const posts = await client.getEntries()
-  const category = await client.getContentType('productReview')
+  // const post = await client.getEntry('3PZ8ZrN0Yawx9r1lOcMPnR')
+  // const posts = await client.getEntries()
+  // const category = await client.getContentType('productReview')
 
-  return {
-    props: {
-      post,
-      posts,
-      category
-    },
-  }
-}
+//   return {
+//     props: {
+//     },
+//   }
+// }
 
 export default Posts
