@@ -1,13 +1,14 @@
 import { CacheProvider } from '@emotion/react';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline } from '@mui/material';
+import { NextUIProvider } from '@nextui-org/react';
 import React from 'react';
 import Footer from '../components/footer/Footer';
 import Nav from '../components/nav/Nav';
-// import '../styles/globals.css';
-import fontStyles from '../styles/fonts.css';
-import lightTheme from '../styles/theme/lightTheme';
+import { globalStyles } from '../styles/normalize';
+import { LightTheme } from '../styles/theme/';
 import createEmotionCache from '../utils/createEmotionCache';
 const clientSideEmotionCache = createEmotionCache();
+
 
 // var client = contentful.createClient({
 //   space: process.env.CONTENTFUL_SPACE_ID,
@@ -16,17 +17,17 @@ const clientSideEmotionCache = createEmotionCache();
 
 const MyApp = (props) => {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-
+  globalStyles();
   return (
     <CacheProvider value={emotionCache}>
-      <ThemeProvider theme={lightTheme}>
+      <NextUIProvider theme={LightTheme}>
         <CssBaseline />
         <Nav />
-        <div className='content-container' style={{ marginTop: '100px' }}>
-          <Component {...pageProps} />
-        </div>
+        {/* <div className='content-container' style={{ marginTop: '100px' }}> */}
+        <Component css={{}}{...pageProps} />
+        {/* </div> */}
         <Footer />
-      </ThemeProvider>
+      </NextUIProvider>
     </CacheProvider>
   );
 };

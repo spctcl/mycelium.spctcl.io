@@ -1,7 +1,7 @@
 import { createTheme } from '@nextui-org/react';
 import * as Theme from './settings';
 
-const lightColors = {
+const darkColors = {
   background: '#1d1d1d',
   text: '#fff',
   myDarkColor: '#ff4ecd',
@@ -17,9 +17,9 @@ const lightColors = {
   primaryShadow: '$blue500'
 }
 
-const LightTheme = createTheme({
-  type: 'light',
-  colors: { ...Theme.colors, ...lightColors },
+const DarkTheme = createTheme({
+  type: 'dark',
+  colors: { ...Theme.colors, ...darkColors },
   borderWeights: Theme.borderWeights,
   breakpoints: Theme.breakpoints,
   dropShadows: Theme.dropShadows,
@@ -33,4 +33,4 @@ const LightTheme = createTheme({
   space: Theme.space,
 })
 
-export default LightTheme;
+export default DarkTheme;

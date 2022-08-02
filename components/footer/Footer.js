@@ -6,7 +6,7 @@ export default function Footer(props) {
 
   return (
     <FooterWrapper>
-      <Typography variant="test">&copy; MYCELIUM - 2022</Typography>
+      <Typography variant="test">&copy; 2022 Spectacle, Inc.</Typography>
       <FooterIllustrationWrapper>
         <MushroomMountains style={{ transform: "translateY(20px)" }} />
       </FooterIllustrationWrapper>
