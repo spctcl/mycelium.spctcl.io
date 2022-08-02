@@ -3,14 +3,24 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
+    "deployWin": "next build && type nul >> out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.1",
+    "@nextui-org/react": "^1.0.0-beta.9",
+    "contentful": "^9.1.33",
     "next": "latest",
+    "polished": "^4.2.2",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "use-media": "^1.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.20.0"
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.3"
   }
 }
