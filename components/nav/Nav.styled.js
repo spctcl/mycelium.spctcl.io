@@ -28,6 +28,7 @@ font - size: ${fontSizes.xl};
 export const NavLinks = styled.div`
 display: flex;
 .nav-links__link div { width: 60px; margin-left: 12px; }
+.nav-links__link:last-of-type div   { margin-left: 8px;}
 
 // @media(${viewports.minXs}) {
 //   display: flex;
