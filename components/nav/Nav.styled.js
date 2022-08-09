@@ -27,11 +27,11 @@ font - size: ${fontSizes.xl};
 `
 export const NavLinks = styled.div`
 display: flex;
-.nav-links__link div { width: 48px; margin-left: 16px; }
+.nav-links__link div { width: 60px; margin-left: 12px; }
 
 // @media(${viewports.minXs}) {
 //   display: flex;
-//   .nav-links__link div { width: 60px; margin-left: 12px; }
+//   .nav-links__link div { width: 48px; margin-left: 16px; }
 // }
 `
 
