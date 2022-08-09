@@ -27,8 +27,7 @@ font - size: ${fontSizes.xl};
 `
 export const NavLinks = styled.div`
 display: flex;
-.nav-links__link div { width: 60px; margin-left: 12px; }
-.nav-links__link:last-of-type div   { margin-left: 8px;}
+.nav-links__link div { width: 48px; margin-left: 16px; }
 
 // @media(${viewports.minXs}) {
 //   display: flex;
@@ -42,7 +41,7 @@ margin: ${space['4']}
 
 export const NavHamburger = styled.div`
 display: none;
-width: 60px;
+width: 48px;
 height: 30px;
 position: relative;
 

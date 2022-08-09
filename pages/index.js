@@ -9,10 +9,7 @@ import Introduction from '../components/introduction/Introduction';
 // });
 
 export default function Home(props) {
-  console.log("props", props)
-
   const theme = useTheme();
-  console.log("theme", theme)
   return (
     <>
       <Head>
@@ -21,43 +18,9 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <>
-        <Container gap={0} css={{ paddingTop: '76px' }}>
-          <Introduction />
-          {/* <Row gap={1}>
-            <Col>
-              <Card css={{ $$cardColor: '$colors$primary' }}>
-                <Card.Body>
-                  <Text h6 size={15} color="white" css={{ m: 0 }}>
-                    <PowerIcon />
-                    <Moving />
-                  </Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card css={{ $$cardColor: '$colors$primary' }}>
-                <Card.Body>
-                  <Text h6 size={15} color="white" css={{ m: 0 }}>
-                    <BatteryStdIcon />
-                    <Built />
-                  </Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card css={{ $$cardColor: '$colors$primary' }}>
-                <Card.Body>
-                  <Text h6 size={15} color="white" css={{ m: 0 }}>
-                    <AssistantPhoto />
-                    <Bolt />
-                  </Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row> */}
-        </Container>
-      </>
+      <Container gap={0} css={{ paddingTop: '76px' }}>
+        <Introduction />
+      </Container>
     </>)
 }
 
