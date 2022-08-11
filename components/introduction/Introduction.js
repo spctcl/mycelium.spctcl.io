@@ -19,13 +19,13 @@ export default function Introduction(props) {
       <Card css={{ $$cardColor: '$brandPrimary' }} >
         <Card.Body>
           <Text className="introduction__text">
-            Web3
+            Open,
           </Text>
           <Text className="introduction__text introduction__text--highlighted" color="#4F5152" css={{ textGradient: "0deg, #1d3f66 -20%, #3c1bd4db 10%" }}>
-            distributed sensing
+            distributed device
           </Text>
           <Text className="introduction__text">
-            for a cleaner, more productive world.
+            protocol for a Better World.
           </Text>
         </Card.Body>
       </Card>

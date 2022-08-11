@@ -9,7 +9,7 @@ export const Footer = styled.footer`
   border-top: 1px solid white;
   background-color: #5137d485;
   line-height: 45px;
-  position: sticky;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;

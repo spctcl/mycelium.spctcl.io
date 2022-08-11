@@ -33,16 +33,14 @@ body+div {
   font-size: 74px;
   color: #4F5152;
   font-weight: 700;
-  line-height: 76px;
+  line-height: 88px;
 }
 
 .introduction__text--highlighted {
-  height: 215px;
   font-size: 88px;
   color: #4F5152;
   font-weight: 700;
   line-height: 88px;
-  height: 191px;
 }
 
 .introduction-container {
@@ -54,16 +52,15 @@ body+div {
 @media (min-width: 960px) {
   .introduction__text {
     font-size: 91px;
-    line-height: 96px;
+    line-height: 106px;
   }
 
   .introduction__text--highlighted {
     font-size: 98px;
     min-height: 114px !important;
-    height: unset;
-    line-height: 100px;
-    /* min-height: 115px; */
     line-height: 98px;
+    line-height: 114px;
+    height: unset;
   }
 
 }
@@ -74,11 +71,6 @@ body+div {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-  }
-
-  .introduction__text--highlighted {
-    min-height: 114px !important;
-    height: 212px;
   }
 }
 
