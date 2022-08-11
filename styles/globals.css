@@ -1,8 +1,14 @@
 html,
 body {
   height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 0;
   margin: 0;
+  /* overflow: hidden; */
   font-family: 'Inter', monospace, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -12,6 +18,72 @@ a {
   text-decoration: none;
 }
 
+body {}
+
+body+div {
+  position: relative;
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
+}
+
+.introduction__text {
+  font-size: 74px;
+  color: #4F5152;
+  font-weight: 700;
+  line-height: 76px;
+}
+
+.introduction__text--highlighted {
+  height: 215px;
+  font-size: 88px;
+  color: #4F5152;
+  font-weight: 700;
+  line-height: 88px;
+  height: 191px;
+}
+
+.introduction-container {
+  display: flex;
+  gap: 0;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 960px) {
+  .introduction__text {
+    font-size: 91px;
+    line-height: 96px;
+  }
+
+  .introduction__text--highlighted {
+    font-size: 98px;
+    min-height: 114px !important;
+    height: unset;
+    line-height: 100px;
+    /* min-height: 115px; */
+    line-height: 98px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .introduction-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .introduction__text--highlighted {
+    min-height: 114px !important;
+    height: 212px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .introduction__text--highlighted {
+    height: unset;
+  }
 }

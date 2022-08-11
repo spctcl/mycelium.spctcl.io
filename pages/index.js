@@ -18,7 +18,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container gap={0} css={{ paddingTop: '76px' }}>
+      <Container gap={0} css={{ paddingTop: '76px', position: 'relative' }}>
         <Introduction />
       </Container>
     </>)

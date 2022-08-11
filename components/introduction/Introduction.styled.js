@@ -4,6 +4,7 @@ import { viewports } from '../../styles/theme/settings'
 
 export const IntroductionImageWrapper = styled.div`
 display: flex;
+min-width: 40%;
 flex-direction: row;
 align-items: baseline;
 margin-bottom: 54px;

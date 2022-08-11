@@ -1,19 +1,9 @@
 import { Card, Container, Image, Text } from "@nextui-org/react";
-import { breakpoints, space } from "../../styles/theme/settings";
-
 import { IntroductionImageWrapper } from './Introduction.styled';
 export default function Introduction(props) {
 
   return (
-    <Container display="flex" gap={0} direction='column-reverse'
-      css={{
-        '@lg': {
-          flexDirection: 'row',
-          flexWrap: 'nowrap',
-          alignItems: 'center',
-        },
-      }}
-    >
+    <Container className="introduction-container">
       <IntroductionImageWrapper>
         <Image
           className={'homepage-mushroom-7'}
@@ -28,19 +18,15 @@ export default function Introduction(props) {
       </IntroductionImageWrapper>
       <Card css={{ $$cardColor: '$brandPrimary' }} >
         <Card.Body>
-          <Text className="introduction__text" size={91} color="#4F5152" css={{ fontWeight: 700, lineHeight: '96px', [breakpoints.md]: { lineHeight: '200px', textDecoration: 'underline' } }}>
+          <Text className="introduction__text">
             Web3
           </Text>
-          <Text className="introduction__text introduction__text--highlighted" size={98} color="#4F5152" css={{ fontWeight: 700, lineHeight: '118px', textGradient: "0deg, #1d3f66 -20%, #3c1bd4db 50%", }}>
+          <Text className="introduction__text introduction__text--highlighted" color="#4F5152" css={{ textGradient: "0deg, #1d3f66 -20%, #3c1bd4db 10%" }}>
             distributed sensing
           </Text>
-          <Text className="introduction__text" size={91} color="#4F5152" css={{ fontWeight: 700, lineHeight: '96px' }}>
+          <Text className="introduction__text">
             for a cleaner, more productive world.
           </Text>
-          <Container display="flex" alignItems="center" justify="space-evenly"
-            css={{ marginTop: space.lg }}
-          >
-          </Container>
         </Card.Body>
       </Card>
     </Container >
