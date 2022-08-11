@@ -37,7 +37,7 @@ export default function DrawerAppBar(props) {
 
   const scrollPosition = useScrollPosition();
 
-  console.log("scrollPosition", scrollPosition)
+  // console.log("scrollPosition", scrollPosition)
   useEffect(() => {
     setNavHeight(navRef.current.offsetHeight)
     setScrollPosLast(scrollPosition)
@@ -45,22 +45,21 @@ export default function DrawerAppBar(props) {
 
   useEffect(() => {
     if (navRef?.current?.style?.top === '') {
-      console.log("set to ''")
+      // console.log("set to ''")
       navRef.current.style.top = '0px';
     }
     if (scrollPosition < scrollPosLast) {
-      console.log("hoch")
+      // console.log("hoch")
       setOffsetTopNav('0px');
     } else if (scrollPosition > scrollPosLast) {
       let offsetTop = navRef?.current?.style?.top;
-      console.log("offsetTopNav:", offsetTopNav, "offsetTop:", offsetTop, "el:", navRef?.current)
-      offsetTop = parseInt(offsetTop.substring(0, offsetTop.length - 2)) - 1
-      offsetTop += 'px'
+      // console.log("offsetTopNav:", offsetTopNav, "offsetTop:", offsetTop, "el:", navRef?.current)
+      // offsetTop = parseInt(offsetTop.substring(0, offsetTop.length - 2)) - 1
+      // offsetTop += 'px'
       setOffsetTopNav(`${parseInt(navRef?.current?.style?.top?.substring(0, navRef?.current?.style.top?.length - 2)) - 2}px`)
-      console.log("offsetTopNav", offsetTopNav)
+      // console.log("offsetTopNav", offsetTopNav)
     }
 
-    console.log("fin: offsetTopNav", offsetTopNav)
     setScrollPosLast(scrollPosition)
   }, [scrollPosition]);
 
@@ -89,21 +88,21 @@ export default function DrawerAppBar(props) {
           borderRadius: '32px',
         }}>
           <Tooltip content={"Join our Discord Server"}>
-            <Discord fillColor={"#4F5152"} />
+            <Discord fillcolor={"#4F5152"} />
           </Tooltip>
         </Link>
         <Link target="_blank" className="nav-links__link" href='https://youtu.be/9dMH8vjcVHM' css={{
           background: colors.gradient, // linear-gradient(90deg, rgb(5 3 72 / 40%) 0%, rgb(112 9 121 / 50%) 64%, rgb(152 244 246 / 50%) 100%) transparent
         }} variant="contained" size="md">
           <Tooltip content={"Watch our Youtube Video"}>
-            <Youtube fillColor={"#4F5152"} />
+            <Youtube fillcolor={"#4F5152"} />
           </Tooltip>
         </Link>
         <Link target="_blank" className="nav-links__link" href="https://github.com/spctcl/mycelium" css={{
           background: colors.gradient, // linear-gradient(90deg, rgb(5 3 72 / 40%) 0%, rgb(112 9 121 / 50%) 64%, rgb(152 244 246 / 50%) 100%) transparent
         }} variant="contained" size="md">
           <Tooltip content={"See our Codebase"}>
-            <Github fillColor={"#4F5152"} />
+            <Github fillcolor={"#4F5152"} />
           </Tooltip>
         </Link>
       </NavLinks>

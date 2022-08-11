@@ -20,7 +20,7 @@ const Discord = (props) => (
     <g
       style={{
         display: "inline",
-        fill: props.fillColor || "#000000",
+        fill: props.fillcolor || "#000000",
         fillOpacity: 1,
       }}
       id="g860"
@@ -31,7 +31,7 @@ const Discord = (props) => (
         fill="#23272a"
         id="path843"
         style={{
-          fill: props.fillColor || "#000000",
+          fill: props.fillcolor || "#000000",
           fillOpacity: 1,
         }}
       />
