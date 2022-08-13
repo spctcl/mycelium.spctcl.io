@@ -1,18 +1,20 @@
 import { Card, Container, Image, Text } from "@nextui-org/react";
+import { useRouter } from 'next/router';
+import createInternalLink from '../../utils/createInternalLink';
 import { IntroductionImageWrapper } from './Introduction.styled';
 export default function Introduction(props) {
-
+  const router = useRouter()
   return (
     <Container className="introduction-container">
       <IntroductionImageWrapper>
         <Image
           className={'homepage-mushroom-7'}
-          src={"mycelium.spctcl.io/img/mycelium_mushroom_7.png"}
+          src={createInternalLink("img/mycelium_mushroom_7.png", router.basePath)}
           alt="A mushroom"
         />
         <Image
-          className={'homepage-mushroom-7'}
-          src={"mycelium.spctcl.io/img/mycelium_mushroom_8.png"}
+          className={'homepage-mushroom-8'}
+          src={createInternalLink("img/mycelium_mushroom_8.png", router.basePath)}
           alt="A mushroom"
         />
       </IntroductionImageWrapper>
