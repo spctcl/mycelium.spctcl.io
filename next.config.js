@@ -1,3 +1,3 @@
 module.exports = {
-  basePath: '/mycelium.spctcl.io',
+  basePath: '',
 }
