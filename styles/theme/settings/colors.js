@@ -4,7 +4,7 @@ const colors = {
   brandPrimaryTint100: "#93FFCB",
   brandSecondary: "#FF6C3E",
   brandTertiary: "#633DFF",
-
+  link: 'inherit',
   // generic colors
   white: '#ffffff',
   black: '#000000',

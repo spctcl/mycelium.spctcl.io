@@ -1,8 +1,8 @@
 import { Card, Container, Image, Text } from "@nextui-org/react";
 import { useRouter } from 'next/router';
+import { cssTextHeadlineH1, cssTextHeadlineHighlight } from '../../styles';
 import createInternalLink from '../../utils/createInternalLink';
 import { IntroductionImageWrapper } from './Introduction.styled';
-
 export default function Introduction(props) {
   const router = useRouter()
   return (
@@ -20,14 +20,29 @@ export default function Introduction(props) {
         />
       </IntroductionImageWrapper>
       <Card css={{ $$cardColor: '$brandPrimary' }} >
-        <Card.Body>
-          <Text className="introduction__text">
+        <Card.Body css={{ paddingTop: 0, paddingBottom: 0, }}>
+          <Text
+            // className="introduction__text"
+            css={{
+              ...cssTextHeadlineH1
+            }}>
             Open,
           </Text>
-          <Text className="introduction__text introduction__text--highlighted" color="#4F5152" css={{ textGradient: "0deg, #1d3f66 -20%, #3c1bd4db 10%" }}>
+          <Text
+            // className="introduction__text introduction__text--highlighted" 
+            color="#4F5152"
+            css={{
+              ...cssTextHeadlineHighlight,
+              textGradient: "0deg, #1d3f66 -20%, #3c1bd4db 10%"
+            }}>
             distributed device
           </Text>
-          <Text className="introduction__text">
+          <Text
+            // className="introduction__text"
+            css={{
+              ...cssTextHeadlineH1
+            }}
+          >
             protocol for a Better World.
           </Text>
         </Card.Body>

@@ -3,24 +3,21 @@ import { viewports } from '../../styles/theme/settings'
 
 export const Footer = styled.footer`
   color: white;
-  // position: relative;
-  // max-width: 1200px;
+  position: relative;
   text-align: left;
   border-top: 1px solid white;
   background-color: #5137d485;
   line-height: 45px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   span {
     margin-left: 40px;
   }
 
-  @media (${viewports.minSm}){
-    position: absolute;
-  }
   `
 
 export const FooterIllustrationWrapper = styled.div`
@@ -31,4 +28,13 @@ export const FooterIllustrationWrapper = styled.div`
   left: 0;
   z-index: -1;
   overflow: hidden;
+  margin-bottom: 53px;
+
+
+  @media (${viewports.minXl}){
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
 `

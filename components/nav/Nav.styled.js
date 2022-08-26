@@ -2,37 +2,62 @@ import styled from '@emotion/styled'
 import { fontSizes, space, viewports } from '../../styles/theme/settings'
 
 
+export const NavWrapper = styled.div`
+  height: 162px;
+
+  @media(${viewports.minXxs}) {
+    height: 162px;
+  }
+  
+  @media(${viewports.minXs}) {
+    height: 80px;
+  }
+`
+
 export const Nav = styled.nav`
   display: flex;
-  align-conent: center;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   top: 0px;
-  position: fixed;
+  position: ${(props) => props.offsetTopNav === '0px' ? 'fixed' : 'static'};
   width: 100%;
   z-index: 1;
-  height: 80px;
   background-color: white;
   padding: 0 ${space.sm};
   top: ${(props) => props.offsetTopNav};
-
+  
   @media(${viewports.minXs}) {
     padding: 0 ${space.xl};
+    flex-direction: row;
+    height: 80px;
+    align-conent: center;
+    justify-content: space-between;
+    align-items: center;
   }
   `
-
 
 export const NavLogo = styled.div`
 font - size: ${fontSizes.xl};
 `
 export const NavLinks = styled.div`
 display: flex;
-.nav-links__link div { width: 48px; margin-left: 16px; }
+.nav-links__link div {
+   width: 48px;
+   margin-right: 14px; 
+}
 
-// @media(${viewports.minXs}) {
-//   display: flex;
-//   .nav-links__link div { width: 48px; margin-left: 16px; }
-// }
+@media(${viewports.minXxs}) {
+  display: flex;
+  .nav-links__link div { 
+  }
+}
+
+@media(${viewports.minXs}) {
+  display: flex;
+  .nav-links__link div { 
+    margin-right: 0px; 
+    margin-left: 14px; 
+  }
+}
 `
 
 export const NavLink = styled.div`

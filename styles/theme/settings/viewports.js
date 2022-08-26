@@ -1,6 +1,8 @@
 import { breakpoints } from './index';
 
 const viewports = {
+  minXxs: `min-width: ${breakpoints.xxs}`,
+  maxXx: `max-width: ${breakpoints.xxs}`,
   minXs: `min-width: ${breakpoints.xs}`,
   maxXs: `max-width: ${breakpoints.xs}`,
   minSm: `min-width: ${breakpoints.sm}`,

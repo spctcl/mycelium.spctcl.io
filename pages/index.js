@@ -18,7 +18,7 @@ export default function Home(props) {
         <link rel="shortcut icon" href="/mycelium.spctcl.io/favicon.ico" />
       </Head>
 
-      <Container gap={0} css={{ paddingTop: '76px' }}>
+      <Container gap={0} css={{ position: 'relative' }}>
         <Introduction />
       </Container>
     </>)
