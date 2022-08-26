@@ -56,15 +56,15 @@ body+div {
   justify-content: center;
   align-items: center;
   height: auto;
-  min-height: calc( 100vh - 162.5px - 53px );
+  min-height: calc( 100vh - 162.5px - 52px );
   flex-direction: column-reverse;
   
   @media(min-width: 380px) {
-    min-height: calc( 100vh - 162.5px - 53px );
+    min-height: calc( 100vh - 162.5px - 52px );
   }
     
   @media(min-width: 650px) {
-    min-height: calc( 100vh - 80px - 53px );
+    min-height: calc( 100vh - 80px - 52px );
   }
   
   @media (min-width: 1280px) {

@@ -1,36 +1,33 @@
 import { viewports } from '../styles/theme/settings'
 
 export const cssTextHeadlineH1 = {
+  lineHeight: '62px',
+  fontWeight: 700,
   fontSize: '52px',
   color: '#4F5152',
-  fontWeight: 700,
-  lineHeight: '53px',
   [`@media (${viewports.minXxs})`]: {
-    fontSize: '62px',
-    lineHeight: '60px',
+    fontSize: '63px',
+    lineHeight: '73px',
   },
   [`@media (${viewports.minXs})`]: {
     fontSize: '78px',
-    lineHeight: '74px',
+    lineHeight: '88px',
   }
 }
 
 export const cssTextHeadlineHighlight = {
   // minHeight: '118px',
-  lineHeight: '55px',
+  lineHeight: '62px',
   fontWeight: 700,
   fontSize: '52px',
-  marginTop: '4px',
-  paddingBottom: '8px',
 
   [`@media (${viewports.minXxs})`]: {
     fontSize: '63px',
-    lineHeight: '67px', //'60px',
+    lineHeight: '73px', //'60px',
     // minHeight: '134px',
   },
   [`@media (${viewports.minXs})`]: {
     fontSize: '78px',
-    lineHeight: '74px',
-    paddingBottom: '14px',
+    lineHeight: '88px',
   },
 }

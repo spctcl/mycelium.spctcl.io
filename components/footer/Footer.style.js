@@ -14,9 +14,17 @@ export const Footer = styled.footer`
   justify-content: space-between;
   align-items: center;
 
-  span {
-    margin-left: 40px;
+  .footer-mail-info {
+    display: none
   }
+
+  @media (${viewports.minXs}){
+    .footer-mail-info {
+      display: block;
+      margin-right: 8px;
+    }
+  }
+
 
   `
 
@@ -29,12 +37,17 @@ export const FooterIllustrationWrapper = styled.div`
   z-index: -1;
   overflow: hidden;
   margin-bottom: 53px;
+  
+  @media (${viewports.minXs}){
+      margin-bottom: 70px;
+    }
+  }
 
-
-  // @media (${viewports.minXl}){
+  @media (${viewports.minSm}){
     svg {
       width: 100%;
       height: auto;
     }
-  // }
+  }
 `
+

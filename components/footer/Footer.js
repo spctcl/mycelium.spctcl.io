@@ -17,19 +17,20 @@ export default function Footer(props) {
       <Link
         target="_blank"
         className="nav-links__link"
-        href="mailto:info@spctcl.io?subject=Hey%Mycelium!"
+        href="mailto:info@spctcl.io?subject=Hey Mycelium!"
         style={{
           color: 'unset',
           textDecoration: 'underline',
           backgroundColor: 'unset',
         }}
       >
-        <EmailIcon />
+        <span className='footer-mail-info'>info@spctcl.io</span>
+        <EmailIcon sx={{ alignSelf: 'center' }} />
       </Link>
 
-      <FooterIllustrationWrapper>
+      <FooterIllustrationWrapper >
         <MushroomMountains style={{
-          transform: "translateY(20px)",
+          transform: "translateY(20px)", width: "100%", height: "auto"
         }} />
       </FooterIllustrationWrapper>
     </FooterWrapper >

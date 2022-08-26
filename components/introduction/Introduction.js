@@ -19,8 +19,8 @@ export default function Introduction(props) {
           alt="a mushroom"
         />
       </IntroductionImageWrapper>
-      <Card css={{ $$cardColor: '$brandPrimary', width: 'auto' }} >
-        <Card.Body css={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}>
+      <Card css={{ $$cardColor: '$brandPrimary', width: 'auto', overflow: 'visible' }} >
+        <Card.Body css={{ paddingTop: 0, paddingBottom: 0, overflow: "visible" }}>
           <Text
             // className="introduction__text"
             css={{
