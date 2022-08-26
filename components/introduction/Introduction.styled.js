@@ -11,8 +11,8 @@ align-items: baseline;
   img  {
     width: 200px;
     
-    @media (${viewports.minLg}) {
-      width: 500px;
-    }
+    // @media (${viewports.minLg}) {
+    //   width: 500px;
+    // }
   }
 `

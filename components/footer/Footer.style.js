@@ -31,10 +31,10 @@ export const FooterIllustrationWrapper = styled.div`
   margin-bottom: 53px;
 
 
-  @media (${viewports.minXl}){
+  // @media (${viewports.minXl}){
     svg {
       width: 100%;
       height: auto;
     }
-  }
+  // }
 `

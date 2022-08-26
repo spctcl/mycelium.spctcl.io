@@ -1,7 +1,7 @@
 import { Card, Container, Image, Text } from "@nextui-org/react";
 import { useRouter } from 'next/router';
 import { cssTextHeadlineH1, cssTextHeadlineHighlight } from '../../styles';
-import createInternalLink from '../../utils/createInternalLink';
+import { createInternalLink } from '../../utils';
 import { IntroductionImageWrapper } from './Introduction.styled';
 export default function Introduction(props) {
   const router = useRouter()
@@ -19,8 +19,8 @@ export default function Introduction(props) {
           alt="a mushroom"
         />
       </IntroductionImageWrapper>
-      <Card css={{ $$cardColor: '$brandPrimary' }} >
-        <Card.Body css={{ paddingTop: 0, paddingBottom: 0, }}>
+      <Card css={{ $$cardColor: '$brandPrimary', width: 'auto' }} >
+        <Card.Body css={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}>
           <Text
             // className="introduction__text"
             css={{
