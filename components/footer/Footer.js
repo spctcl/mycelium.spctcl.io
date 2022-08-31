@@ -2,8 +2,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { Link, Text } from "@nextui-org/react";
 
 import * as React from 'react';
-// import MushroomMountains from '../illustrations/illustration-mushroom-landscape';
-import MushroomMountains from '../illustrations/illustration-mushroom-landscape';
+import MushroomMountains from '../illustrations/illustration-mushroom-landscape-4';
 import { Footer as FooterWrapper, FooterIllustrationWrapper } from './Footer.style';
 export default function Footer(props) {
 
