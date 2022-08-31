@@ -2,7 +2,6 @@ import styled from '@emotion/styled'
 import { viewports } from '../../styles/theme/settings'
 
 export const Footer = styled.footer`
-  color: white;
   position: relative;
   text-align: left;
   border-top: 1px solid white;
@@ -13,9 +12,15 @@ export const Footer = styled.footer`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: Arial, sans-serif;
+  height: 52px;
 
   .footer-mail-info {
     display: none
+  }
+
+  a {
+    color: inherit;
   }
 
   @media (${viewports.minXs}){
@@ -38,11 +43,6 @@ export const FooterIllustrationWrapper = styled.div`
   overflow: hidden;
   margin-bottom: 53px;
   
-  @media (${viewports.minXs}){
-      margin-bottom: 70px;
-    }
-  }
-
   @media (${viewports.minSm}){
     svg {
       width: 100%;
