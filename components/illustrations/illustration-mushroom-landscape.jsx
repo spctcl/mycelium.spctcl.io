@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const IllustrationMushroomLandscape = (props) => (
-  <svg width="600mm" height="200mm" viewBox="0 0 600 200" id="svg5" {...props}>
+  <svg width="600px" height="200px" viewBox="0 0 600 200" id="svg5" {...props}>
     <defs id="defs2" />
     <g id="layer1">
       <path
