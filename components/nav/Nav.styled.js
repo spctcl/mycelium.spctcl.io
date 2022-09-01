@@ -40,6 +40,7 @@ font - size: ${fontSizes.xl};
 `
 export const NavLinks = styled.div`
 display: flex;
+justify-content: flex-end;
 .nav-links__link div {
    width: 48px;
    margin-right: 14px; 
